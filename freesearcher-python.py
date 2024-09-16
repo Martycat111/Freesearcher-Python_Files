@@ -7,7 +7,7 @@ def list_github_repo_files():
     repo_name = "Freesearcher-Python_Files"
 
     # GitHub API URL to get the repository contents
-    api_url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/contents"
+    api_url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/downloads/contents"
 
     try:
         response = requests.get(api_url)
